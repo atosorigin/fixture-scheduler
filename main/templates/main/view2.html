@@ -1,0 +1,250 @@
+{% extends "main/header.html" %}
+
+{% block content %}
+
+<script>
+    function stampa(){
+     
+    
+      Teams = ["<td>Arsenal<img class='Test-Logo2' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4df.png'>",
+      "<td>Aston Villa<img class='Test-Logo2' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e4.png'>",
+      "<td>Bournemouth<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/hif/5/53/AFC_Bournemouth_%282013%29.png'>",
+      "<td>Brighton & Hove<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png'>",
+      "<td>Burnley<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/sco/0/02/Burnley_FC_badge.png'>",
+      "<td>Chelsea<img class='Test-Logo2' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e1.png'></td>",
+      "<td>Crystal Palace<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/hif/c/c1/Crystal_Palace_FC_logo.png'>",
+      "<td>Everton<img class='Test-Logo2' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e3.png'>",
+      "<td>Leicester City<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/hif/a/ab/Leicester_City_crest.png'>",
+      "<td>Liverpool<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png'>",
+      "<td>Manchester City<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/sco/thumb/e/eb/Manchester_City_FC_badge.svg/410px-Manchester_City_FC_badge.svg.png'>",
+      "<td>Manchester United<img class='Test-Logo2' src='https://cdn.freebiesupply.com/images/thumbs/2x/manchester-united-logo.png'>",
+      "<td>Newcastle United<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/hif/2/25/Newcastle_United_Logo.png'>",
+      "<td>Norwich City<img class='Test-Logo2' src='http://boxtoboxfootball.uk/wp-content/uploads/2017/07/1200px-Norwich_City.svg_.png'>",
+      "<td>Sheffield United<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/1200px-Sheffield_United_FC_logo.svg.png'>",
+      "<td>Southampton<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/1200px-FC_Southampton.svg.png'>",
+      "<td>Tottenham<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png'>",
+      "<td>Watford<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Watford.svg/1200px-Watford.svg.png'>",
+      "<td>West Ham United<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png'>",
+      "<td>Wolverhampton<img class='Test-Logo2' src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png'>"
+      ];
+    
+      Teams2 = ["<td>Arsenal<img class='Test-Logo' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4df.png'>",
+      "<td>Aston Villa<img class='Test-Logo' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e4.png'>",
+      "<td>Bournemouth<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/hif/5/53/AFC_Bournemouth_%282013%29.png'>",
+      "<td>Brighton & Hove<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png'>",
+      "<td>Burnley<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/sco/0/02/Burnley_FC_badge.png'>",
+      "<td>Chelsea<img class='Test-Logo' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e1.png'></td>",
+      "<td>Crystal Palace<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/hif/c/c1/Crystal_Palace_FC_logo.png'>",
+      "<td>Everton<img class='Test-Logo' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e3.png'>",
+      "<td>Leicester City<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/hif/a/ab/Leicester_City_crest.png'>",
+      "<td>Liverpool<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png'>",
+      "<td>Manchester City<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/sco/thumb/e/eb/Manchester_City_FC_badge.svg/410px-Manchester_City_FC_badge.svg.png'>",
+      "<td>Manchester United<img class='Test-Logo' src='https://cdn.freebiesupply.com/images/thumbs/2x/manchester-united-logo.png'>",
+      "<td>Newcastle United<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/hif/2/25/Newcastle_United_Logo.png'>",
+      "<td>Norwich City<img class='Test-Logo' src='http://boxtoboxfootball.uk/wp-content/uploads/2017/07/1200px-Norwich_City.svg_.png'>",
+      "<td>Sheffield United<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/1200px-Sheffield_United_FC_logo.svg.png'>",
+      "<td>Southampton<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/1200px-FC_Southampton.svg.png'>",
+      "<td>Tottenham<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png'>",
+      "<td>Watford<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Watford.svg/1200px-Watford.svg.png'>",
+      "<td>West Ham United<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png'>",
+      "<td>Wolverhampton<img class='Test-Logo' src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png'>"
+      ];
+    
+
+      for (i = 1; i < 21; i++) {
+        if (i === 1) { continue; }
+        if (i === 3) { continue; }
+        if (i === 3) { continue; }
+        if (i === 5) { continue; }
+        if (i === 7) { continue; }
+        if (i === 9) { continue; }
+        if (i === 11) { continue; }
+        if (i === 13) { continue; }
+        if (i === 15) { continue; }
+        if (i === 17) { continue; }
+        if (i === 19) { continue; }
+        Team1= Teams[Math.floor(Math.random() * Teams.length)];
+        document.getElementById(i).innerHTML = Team1;
+    }
+    
+      for (i = 1; i < 21; i++) {
+        if (i === 2) { continue; }
+        if (i === 4) { continue; }
+        if (i === 6) { continue; }
+        if (i === 8) { continue; }
+        if (i === 10) { continue; }
+        if (i === 12) { continue; }
+        if (i === 14) { continue; }
+        if (i === 16) { continue; }
+        if (i === 18) { continue; }
+        if (i === 20) { continue; }
+        Team1= Teams2[Math.floor(Math.random() * Teams2.length)];
+        document.getElementById(i).innerHTML = Team1;
+        
+    }
+    
+    
+    }
+    
+    </script>
+    <style>
+    
+    .Test-Logo{
+      position: absolute;
+      height: 35px;
+      width: 35px;
+      left:130px;
+      top: -10px;
+    
+    }
+    
+    .Test-Logo2{
+      position: absolute;
+      height: 35px;
+      width: 35px;
+      right:130px;
+      top: -10px;
+    }
+    
+    </style>
+    
+    <div class="row">
+            {% for tutorials in tutorials %}
+            <script>stampa();</script>
+            <div class="col s12 m12 l12">
+              <div class="card">
+                <div class="card">
+                        <table>
+                            <style>
+                                #customers {
+                                  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                                  border-collapse: collapse;
+                                  width: 100%;
+                                }
+                                
+                                #customers td, #customers th {
+                                  border: 1px solid #ddd;
+                                  padding: 15px;
+                                }
+                                #customers img{
+    
+                                  align: center;
+                                  padding-bottom: 6px;
+    
+                                }
+                                
+                                #customers tr:nth-child(even){background-color: #f2f2f2;}
+                                
+                                #customers tr:hover {background-color: rgb(165, 168, 167);}
+    
+                              
+                                
+                                #customers th {
+                                  padding-top: 12px;
+                                  padding-bottom: 12px;
+                                  text-align: left;
+                                  background-color: #38003c;
+                                  color: white;
+                                  text-align: center;
+                                  
+                      
+                                }
+    
+                                #customers td {
+    
+                                  width: 25% ;
+                                  text-align: center;
+                                  font-weight: bold;
+                                }
+    
+                                .test-text{
+    
+    
+                                }
+    
+    
+                                .testing123{
+                                  position: absolute;
+                                  
+    
+    
+                                }
+                                .testing1234{
+                                  position: absolute;
+                                  right:20px;
+                                  
+    
+                                }
+    
+    
+    
+                                </style>
+                                </head>
+                                <body>
+                                <table id="customers">
+    
+                                  <tr>
+                                    <th colspan="3"></th>
+                                  </tr>
+                                  <tr class='row1'>
+                                    <td><p id='1' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='2' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row2'>
+                                    <td><p id='3' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='4' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row3'>
+                                    <td><p id='5' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='6' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row4'>
+                                    <td><p id='7' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='8' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row5'>
+                                    <td><p id='9' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='10' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row6'>
+                                    <td><p id='11' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='12' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row7'>
+                                    <td id><p id='13' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='14' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row8'>
+                                    <td><p id='15' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='16' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row9'>
+                                    <td><p id='17' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='18' class='testing1234'></p></td>
+                                  </tr>
+                                  <tr class='row10'>
+                                    <td><p id='19' class='testing123'></p></td>
+                                    <td>V</td>
+                                    <td><p id='20' class='testing1234'></p></td>
+                                  </tr>
+                                </table>
+    
+                                
+                </div>
+              </div>
+    
+              
+            </div>
+
+        {% endfor %}
+      </div>
+    {% endblock %}

@@ -1,0 +1,22 @@
+from django.db import models
+from django.db.models import CharField
+from datetime import datetime
+
+class Tutorial(models.Model):
+    tutorial_title = models.CharField(max_length=200)
+    tutorial_content = models.TextField()
+    tutorial_published = models.DateTimeField("date published",default=datetime.now())
+
+    def __str__(self):
+        return self.tutorial_title
+
+
+
+class PremierTeams(models.Model):
+    tutorial_title = models.CharField(max_length=30)
+    tutorial_content = models.TextField()
+    tutorial_published = models.DateTimeField("date published",default=datetime.now())
+
+    def __str__(self):
+        return self.tutorial_title
+
