@@ -1,0 +1,197 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<style>
+
+
+
+</style>
+
+<link rel="stylesheet" href="{% static 'main/css/pairings.css' %}">
+
+<h1 class='Title'>New Club Pairing Request</h1>
+
+<div class='DIV'>
+  <select class='Clubs'>
+    <option value="League">League</option>
+    <option value="Police">Police</option>
+    <option value="Transport">Transport</option>
+  </select>
+</div>
+
+<div class='IMAGES'>
+<img id='Test-Logo2' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4df.png'>
+<img id='Test-Logo4' src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4df.png'>
+    </div>
+
+</div>
+
+
+
+<div class='DIV2'>
+        <select class='Clubs2' onchange="Check1(this);">
+          <option value="Juventus">Juventus</option>
+          <option value="Inter Milan">Inter Milan</option>
+          <option value="Lazio">Lazio</option>
+          <option value="Cagliari">Cagliari</option>
+          <option value="Roma">Roma</option>
+          <option value="Atalanta">Atalanta</option>
+          <option value="Napoli">Napoli</option>
+          <option value="Parma">Parma</option>
+          <option value="Verona">Verona</option>
+          <option value="Fiorentina">Fiorentina</option>
+          <option value="Torino">Torino</option>
+          <option value="Milan">Milan</option>
+          <option value="Udinese">Udinese</option>
+          <option value="Sassuolo">Sassuolo</option>
+          <option value="Bologna">Bologna</option>
+          <option value="Sampdoria">Sampdoria</option>
+          <option value="Lecce">Lecce</option>
+          <option value="Genoa">Genoa</option>
+          <option value="SPAL">SPAL</option>
+          <option value="Brescia">Brescia</option>
+      
+      
+          </select>
+
+    <select class='Clubs3' onchange="Check2(this);">
+          <option value="Juventus">Juventus</option>
+          <option value="Inter Milan">Inter Milan</option>
+          <option value="Lazio">Lazio</option>
+          <option value="Cagliari">Cagliari</option>
+          <option value="Roma">Roma</option>
+          <option value="Atalanta">Atalanta</option>
+          <option value="Napoli">Napoli</option>
+          <option value="Parma">Parma</option>
+          <option value="Verona">Verona</option>
+          <option value="Fiorentina">Fiorentina</option>
+          <option value="Torino">Torino</option>
+          <option value="Milan">Milan</option>
+          <option value="Udinese">Udinese</option>
+          <option value="Sassuolo">Sassuolo</option>
+          <option value="Bologna">Bologna</option>
+          <option value="Sampdoria">Sampdoria</option>
+          <option value="Lecce">Lecce</option>
+          <option value="Genoa">Genoa</option>
+          <option value="SPAL">SPAL</option>
+          <option value="Brescia">Brescia</option>
+        </select>
+        </div>
+  
+  
+      </select>
+
+
+  </div>
+  
+  
+
+  <script>
+
+
+
+function Check1(that) {
+    if (that.value == "Southampton") {
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/1200px-FC_Southampton.svg.png';
+    }else if (that.value == "Arsenal"){
+      document.getElementById('Test-Logo2').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4df.png';
+    }else if (that.value == "Aston Villa"){
+      document.getElementById('Test-Logo2').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e4.png';
+    }else if (that.value == "Bournemouth"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/hif/5/53/AFC_Bournemouth_%282013%29.png';
+    }else if (that.value == "Brighton & Hove"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png';
+    }else if (that.value == "Burnley"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/sco/0/02/Burnley_FC_badge.png';
+    }else if (that.value == "Chelsea"){
+      document.getElementById('Test-Logo2').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e1.png';
+    }else if (that.value == "Crystal Palace"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/hif/c/c1/Crystal_Palace_FC_logo.png';
+    }else if (that.value == "Everton"){
+      document.getElementById('Test-Logo2').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e3.png';
+    }else if (that.value == "Leicester City"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/hif/a/ab/Leicester_City_crest.png';
+    }else if (that.value == "Liverpool"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png';
+    }else if (that.value == "Man City"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/sco/thumb/e/eb/Manchester_City_FC_badge.svg/410px-Manchester_City_FC_badge.svg.png';
+    }else if (that.value == "Man United"){
+      document.getElementById('Test-Logo2').src='https://www.festisite.com/static/partylogo/img/logos/manchester-united.png';
+    }else if (that.value == "Newcastle United"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/hif/2/25/Newcastle_United_Logo.png';
+    }else if (that.value == "Norwich City"){
+      document.getElementById('Test-Logo2').src='http://boxtoboxfootball.uk/wp-content/uploads/2017/07/1200px-Norwich_City.svg_.png';
+    }else if (that.value == "Sheffield United"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/1200px-Sheffield_United_FC_logo.svg.png';
+    }else if (that.value == "Tottenham"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png';
+    }else if (that.value == "Watford"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Watford.svg/1200px-Watford.svg.png';
+    }else if (that.value == "West Ham"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png';
+    }else if (that.value == "Wolverhampton"){
+      document.getElementById('Test-Logo2').src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png';
+
+
+
+    }
+  }
+
+function Check2(that) {
+    if (that.value == "Southampton") {
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/1200px-FC_Southampton.svg.png';
+    }else if (that.value == "Arsenal"){
+      document.getElementById('Test-Logo4').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4df.png';
+    }else if (that.value == "Aston Villa"){
+      document.getElementById('Test-Logo4').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e4.png';
+    }else if (that.value == "Bournemouth"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/hif/5/53/AFC_Bournemouth_%282013%29.png';
+    }else if (that.value == "Brighton & Hove"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png';
+    }else if (that.value == "Burnley"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/sco/0/02/Burnley_FC_badge.png';
+    }else if (that.value == "Chelsea"){
+      document.getElementById('Test-Logo4').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e1.png';
+    }else if (that.value == "Crystal Palace"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/hif/c/c1/Crystal_Palace_FC_logo.png';
+    }else if (that.value == "Everton"){
+      document.getElementById('Test-Logo4').src='http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c4e3.png';
+    }else if (that.value == "Leicester City"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/hif/a/ab/Leicester_City_crest.png';
+    }else if (that.value == "Liverpool"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png';
+    }else if (that.value == "Man City"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/sco/thumb/e/eb/Manchester_City_FC_badge.svg/410px-Manchester_City_FC_badge.svg.png';
+    }else if (that.value == "Man United"){
+      document.getElementById('Test-Logo4').src='https://www.festisite.com/static/partylogo/img/logos/manchester-united.png';
+    }else if (that.value == "Newcastle United"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/hif/2/25/Newcastle_United_Logo.png';
+    }else if (that.value == "Norwich City"){
+      document.getElementById('Test-Logo4').src='http://boxtoboxfootball.uk/wp-content/uploads/2017/07/1200px-Norwich_City.svg_.png';
+    }else if (that.value == "Sheffield United"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/1200px-Sheffield_United_FC_logo.svg.png';
+    }else if (that.value == "Tottenham"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png';
+    }else if (that.value == "Watford"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Watford.svg/1200px-Watford.svg.png';
+    }else if (that.value == "West Ham"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png';
+    }else if (that.value == "Wolverhampton"){
+      document.getElementById('Test-Logo4').src='https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png';
+
+
+
+    }
+  }
+
+
+</script>
+<div class='buttonDIV'>
+<button class='button'>SUBMIT</button>
+</div>
+
+{% endblock %}

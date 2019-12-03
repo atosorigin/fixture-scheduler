@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\a765778\Downloads\fixture-scheduler-Terryn-Branch\fixture-scheduler-Terryn-Branch\PremierLeague\venv"
+set "VIRTUAL_ENV=C:\Users\a765778\Downloads\PremierLeague\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

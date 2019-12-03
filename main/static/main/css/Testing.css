@@ -1,0 +1,46 @@
+
+
+
+.navBar .search-container {
+    position: relative;
+    float: right;
+    top: 20px;  
+}
+
+.Test-Logos1{
+  position: static;
+  left: 20px;
+  height: 35px;
+  width: 35px;
+}
+
+.RealLogo{
+  background: #385d94;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 60px;
+
+}
+
+#search-bar {
+  margin-top: 5px;
+  position: relative;
+  width: 200px;
+  padding: 6px 6px 6px 30px;
+  border: 2px solid #dadada;
+  border-radius: 20px;
+  box-sizing: border-box;
+  outline: none;
+  background: url(./search.png) no-repeat #fff 5px;
+  background-size: 20px 20px;
+  transition: width, ease, 0.5s;
+  float: right;
+}
+  
+#search-bar:focus { 
+  outline: none;
+  border-color: #0066A1;
+  box-shadow: 0 0 10px #0066A1; 
+  width: 400px;
+}

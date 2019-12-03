@@ -1,100 +1,83 @@
 
 
-
-<style>
-
-.Prem-Logo{
-
-    float: left;
-  
-
-}
-
-
-.navBar .search-container {
-    position: relative;
-  float: right;
-  top: 25%;
-  
-}
-
-
-
-@media screen and (max-width: 500px) {
-  .topnav .search-container {
-    float: none;
-  }
-}
-.form{
-height: 40px;
-
-}
-
-
-
-</style>
-
 <html>
 <head>
-{% load static %}
 
+{% load static %}
+<!-- Links to JavaScript + CSS static location -->
+
+<link href = "{% static 'main/css/Testing.css' %}" rel="stylesheet">
 <link href = "{% static 'main/css/materialize.css' %}" rel="stylesheet">
 
-    <html lang="en">
-        <head>
+<!-- meta element below for mobile / smaller screens-->
+<html lang="en">
+    <head>
         
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link href = "{% static 'main/css/PremierLeague.css' %}" rel="stylesheet">
-
-        
-        
- 
-        </head>
-        <body>
-            
-            <header class="masthead">
-        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href = "{% static 'main/css/PremierLeague.css' %}" rel="stylesheet">
     
+    </head>
+    <body>
         
-        
+        <header class="masthead" style="background-image: url('http://www.legaseriea.it/assets/legaseriea/images/bg_home_statistiche.jpg');">      
+            
+            <section id="mainNav" class="navBar" role="menubar">
+                <nav class="mainNav">
+                    <div class="search-container">
+                        <form class='form' action="/search" method="POST">
+                            <input id="search-bar" type="text" placeholder="Search.." name="search">
 
-                    <section id="mainNav" class="navBar" role="menubar">
-                        </a>
-                        <nav class="mainNav">
+                        </form>
+                    </div>
 
-                                <div class="search-container">
-                                        <form class='form' action="/action_page.php">
-                                          <input type="text" placeholder="Search.." name="search">
-                                        </form>
-                                      </div>
-                                <ul class="pageLinks" role="menu">
-
-                                <span class="Prem-Logo"><img src="//resources-pl.pulselive.com/ver/i/elements/premier-league-logo-header-mob.svg" alt="Premier League Logo"></span>
+            
                                 
-
-                                
-        
-        
+                    
+                    
+        <ul class="pageLinks" role="menu">
+            
+            
+            <span class="Prem-Logo"><img class = 'RealLogo' src="http://www.legaseriea.it/assets/legaseriea/images/logo.png?v=2019" alt="Premier League Logo"></span>
+            
             <li class="fantasy noDrop"  role="menuitem">
-                    <a href="/admin/" data-link-index="1" class="navLink " role="menuitem">
-                        Admin
-                    </a>
-
-        
+                <a href="/admin/" data-link-index="1" class="navLink " role="menuitem">
+                    Admin
+                </a>
+            
             </li>
+            
+            
+            <li class="more " tabindex="0" aria-haspopup="true" role="menuitem">
+                <div role="button" class="navLink ">Requests<span class="icn chevron-down-sm-w"></span></div>
+                <div class="dropdown" aria-hidden="true">
+                    <ul role="menu">
+                        <li>
+                            <a href="/final/" role="menuitem">Team Pairings</a>
+                        </li>
+                        <li>
+                            <a href="/teamDateRequests/" role="menuitem">Date Requests</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
         
             <li class="more " tabindex="0" aria-haspopup="true" role="menuitem">
                 <div role="button" class="navLink ">Views<span class="icn chevron-down-sm-w"></span></div>
                 <div class="dropdown" aria-hidden="true">
                     <ul role="menu">
-                                <li>
-                                    <a href="/view2/" role="menuitem">Singular</a>
-                                </li>
-                                <li>
-                                    <a href="/" role="menuitem">Side-by-side</a>
-                                </li>
+                        <li>
+                            <a href="/view2/" role="menuitem">Singular</a>
+                        </li>
+                        <li>
+                            <a href="/" role="menuitem">Side-by-side</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
 
 
 

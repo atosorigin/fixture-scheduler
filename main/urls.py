@@ -22,7 +22,9 @@ app_name = 'main'
 urlpatterns = [
     path('', views.homepage, name="homepage"),
     path('fixtures/',views.fixtures),
-    path('view2/',views.view2)
-
+    path('view2/',views.view2),
+    path('pairings/',views.pairings),
+    path('final/',views.finalpairings),
+    path('teamDateRequests/',views.teamDateRequests),
+    path('testingpage/',views.testing)
 ]
-

@@ -1,0 +1,112 @@
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: rgb(165, 168, 167);}
+
+
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #385d94;
+  color: white;
+  text-align: center;
+  
+
+}
+
+#customers td {
+
+  width: 25% ;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+.testing123{
+  position: absolute;
+  
+
+
+}
+.testing1234{
+  position: absolute;
+  right:20px;
+  
+
+}
+
+.Test-Logo{
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  left: 140px;
+  top: -10px;
+
+}
+
+.Test-Logo2{
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top: -10px;
+}
+
+.explainability {
+  background-image: url('http://www.legaseriea.it/assets/legaseriea/images/bg.jpg?v=3');
+  color: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.score-high {
+  background-color: green;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 43px;
+}
+
+.score-medium {
+  background-color: orange;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 43px;
+}
+
+.score-low {
+  background-color: red;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 43px;
+}

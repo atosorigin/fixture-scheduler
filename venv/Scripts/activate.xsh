@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"C:\Users\a765778\Downloads\fixture-scheduler-Terryn-Branch\fixture-scheduler-Terryn-Branch\PremierLeague\venv"
+$VIRTUAL_ENV = r"C:\Users\a765778\Downloads\PremierLeague\venv"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

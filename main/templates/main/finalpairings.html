@@ -1,0 +1,239 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'main/css/pairings copy.css' %}">
+
+
+<h1 class='Title'>New Club Pairing Request</h1>
+
+<div class="widget widget_homepagenextlastmatcheswidget">
+  <div class="match-overview">
+    <div class="overview-top">
+      <ul class="home-tabs">
+        <li id="nextMatch" class="active">
+          <div class="homepage-tab next-match active-tab next-match-content" data-tab="tab1">
+            <div class="next-match-game">
+              <div class="home-team"> 
+                <img id='Left-Image' src="">
+                <h2 id='Left-Team'></h2></div>
+                
+                <div class="center-section"><h2 class='Center-V'>&</h2></div>
+                <div class="away-team"><h2 id='Right-Team'></h2> <img id='Right-Image' src="">
+                </div>
+              </div>
+            </div>
+            
+            <link rel="stylesheet" href="{% static 'main/css/pairings.css' %}">
+            <div class='DIV'>
+              <select class='Clubs'>
+                <option value="League">League</option>
+                <option value="Police">Police</option>
+                <option value="Transport">Transport</option>
+              </select>
+            </div>
+            
+            
+            <div class='DIV2'>
+              <select class='Clubs2' onchange="Check1(this);">
+                <option value="Juventus">Juventus</option>
+                <option value="Inter Milan">Inter Milan</option>
+                <option value="Lazio">Lazio</option>
+                <option value="Cagliari">Cagliari</option>
+                <option value="Roma">Roma</option>
+                <option value="Atalanta">Atalanta</option>
+                <option value="Napoli">Napoli</option>
+                <option value="Parma">Parma</option>
+                <option value="Verona">Verona</option>
+                <option value="Fiorentina">Fiorentina</option>
+                <option value="Torino">Torino</option>
+                <option value="Milan">Milan</option>
+                <option value="Udinese">Udinese</option>
+                <option value="Sassuolo">Sassuolo</option>
+                <option value="Bologna">Bologna</option>
+                <option value="Sampdoria">Sampdoria</option>
+                <option value="Lecce">Lecce</option>
+                <option value="Genoa">Genoa</option>
+                <option value="SPAL">SPAL</option>
+                <option value="Brescia">Brescia</option>
+              
+              </select>
+                  
+              <select class='Clubs3' onchange="Check2(this);">
+                <option value="Juventus">Juventus</option>
+                <option value="Inter Milan">Inter Milan</option>
+                <option value="Lazio">Lazio</option>
+                <option value="Cagliari">Cagliari</option>
+                <option value="Roma">Roma</option>
+                <option value="Atalanta">Atalanta</option>
+                <option value="Napoli">Napoli</option>
+                <option value="Parma">Parma</option>
+                <option value="Verona">Verona</option>
+                <option value="Fiorentina">Fiorentina</option>
+                <option value="Torino">Torino</option>
+                <option value="Milan">Milan</option>
+                <option value="Udinese">Udinese</option>
+                <option value="Sassuolo">Sassuolo</option>
+                <option value="Bologna">Bologna</option>
+                <option value="Sampdoria">Sampdoria</option>
+                <option value="Lecce">Lecce</option>
+                <option value="Genoa">Genoa</option>
+                <option value="SPAL">SPAL</option>
+                <option value="Brescia">Brescia</option>
+              
+              </select>
+            
+            
+            
+            </div>
+                    
+                  
+                    <script>
+                  
+                  
+                  
+                  function Check1(that) {
+                       if (that.value == "Juventus") {
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://cdn.freebiesupply.com/images/large/2x/juventus-logo-png-transparent.png';
+                      }else if (that.value == "Inter Milan"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://c7.uihere.com/files/149/536/895/inter-milan-football-serie-a-a-c-milan-uefa-champions-league-football.jpg';
+                      }else if (that.value == "Lazio"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/SS_Lazio.svg/1200px-SS_Lazio.svg.png';
+                      }else if (that.value == "Cagliari"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Cagliari_Calcio_1920.svg/1200px-Cagliari_Calcio_1920.svg.png';
+                      }else if (that.value == "Roma"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/180px-AS_Roma_logo_%282017%29.svg.png';
+                      }else if (that.value == "Atalanta"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/6/66/AtalantaBC.svg/1200px-AtalantaBC.svg.png';
+                      }else if (that.value == "Napoli"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/S.S.C._Napoli_logo.svg/240px-S.S.C._Napoli_logo.svg.png';
+                      }else if (that.value == "Parma"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/commons/4/4a/ParmaCalcio1913_logo-400x400.png';
+                      }else if (that.value == "Verona"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Hellas_Verona_FC_logo.svg/1200px-Hellas_Verona_FC_logo.svg.png';
+                      }else if (that.value == "Fiorentina"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://www.logofootball.net/wp-content/uploads/AC-Fiorentina-HD-Logo-750x750.png';
+                      }else if (that.value == "Torino"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Torino_FC_Logo.svg/1200px-Torino_FC_Logo.svg.png';
+                      }else if (that.value == "Milan"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://cdn.freebiesupply.com/logos/large/2x/ac-milan-logo-png-transparent.png';
+                      }else if (that.value == "Udinese"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/f/f2/Udinese_calcio.png';
+                      }else if (that.value == "Sassuolo"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/ro/thumb/a/a3/US_Sassuolo_Calcio.svg/1200px-US_Sassuolo_Calcio.svg.png';
+                      }else if (that.value == "Bologna"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/d/db/Bologna_F.C._1909_logo.png';
+                      }else if (that.value == "Sampdoria"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/U.C._Sampdoria_logo.svg/1200px-U.C._Sampdoria_logo.svg.png';
+                      }else if (that.value == "Lecce"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/it/a/a0/Leccestemma.png';
+                      }else if (that.value == "Genoa"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/ro/thumb/7/76/Genoa_CFC.svg/1200px-Genoa_CFC.svg.png';
+                      }else if (that.value == "SPAL"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Spal2013_logo.svg/1200px-Spal2013_logo.svg.png';
+                      }else if (that.value == "Brescia"){
+                        document.getElementById('Left-Team').innerHTML = that.value;
+                        document.getElementById('Left-Image').src='https://upload.wikimedia.org/wikipedia/fr/9/94/Brescia_Calcio_logo.png';
+                      }
+                  }
+                  
+                  function Check2(that) {
+                      if (that.value == "Juventus") {
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://cdn.freebiesupply.com/images/large/2x/juventus-logo-png-transparent.png';
+                      }else if (that.value == "Inter Milan"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://c7.uihere.com/files/149/536/895/inter-milan-football-serie-a-a-c-milan-uefa-champions-league-football.jpg';
+                      }else if (that.value == "Lazio"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/SS_Lazio.svg/1200px-SS_Lazio.svg.png';
+                      }else if (that.value == "Cagliari"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Cagliari_Calcio_1920.svg/1200px-Cagliari_Calcio_1920.svg.png';
+                      }else if (that.value == "Roma"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/180px-AS_Roma_logo_%282017%29.svg.png';
+                      }else if (that.value == "Atalanta"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/6/66/AtalantaBC.svg/1200px-AtalantaBC.svg.png';
+                      }else if (that.value == "Napoli"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/S.S.C._Napoli_logo.svg/240px-S.S.C._Napoli_logo.svg.png';
+                      }else if (that.value == "Parma"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/commons/4/4a/ParmaCalcio1913_logo-400x400.png';
+                      }else if (that.value == "Verona"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Hellas_Verona_FC_logo.svg/1200px-Hellas_Verona_FC_logo.svg.png';
+                      }else if (that.value == "Fiorentina"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://www.logofootball.net/wp-content/uploads/AC-Fiorentina-HD-Logo-750x750.png';
+                      }else if (that.value == "Torino"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Torino_FC_Logo.svg/1200px-Torino_FC_Logo.svg.png';
+                      }else if (that.value == "Milan"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://cdn.freebiesupply.com/logos/large/2x/ac-milan-logo-png-transparent.png';
+                      }else if (that.value == "Udinese"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/f/f2/Udinese_calcio.png';
+                      }else if (that.value == "Sassuolo"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/ro/thumb/a/a3/US_Sassuolo_Calcio.svg/1200px-US_Sassuolo_Calcio.svg.png';
+                      }else if (that.value == "Bologna"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/d/db/Bologna_F.C._1909_logo.png';
+                      }else if (that.value == "Sampdoria"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/U.C._Sampdoria_logo.svg/1200px-U.C._Sampdoria_logo.svg.png';
+                      }else if (that.value == "Lecce"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/it/a/a0/Leccestemma.png';
+                      }else if (that.value == "Genoa"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/ro/thumb/7/76/Genoa_CFC.svg/1200px-Genoa_CFC.svg.png';
+                      }else if (that.value == "SPAL"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Spal2013_logo.svg/1200px-Spal2013_logo.svg.png';
+                      }else if (that.value == "Brescia"){
+                        document.getElementById('Right-Team').innerHTML = that.value;
+                        document.getElementById('Right-Image').src='https://upload.wikimedia.org/wikipedia/fr/9/94/Brescia_Calcio_logo.png';
+                      }
+                  }
+                        </script>
+                  
+                  
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+{% endblock %}

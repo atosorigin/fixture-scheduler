@@ -1,0 +1,222 @@
+.buttonDIV{width:100%;
+  padding-bottom: 160px;
+  border:0px solid #000}
+
+
+
+.button{
+  top:1100px;
+  position: absolute;
+  height:20px;
+  left: 50%;
+}
+
+.title{
+
+
+  text-align:center;
+}
+
+.Clubs {width: 40%;
+  height: 10%;
+  margin-right: 30%;
+  margin-left: 30%;
+  background-color: rgb(255, 255, 255)}
+
+.DIV{width:100%;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  border:0px solid #000}
+
+
+.Clubs2{width: 20%;
+  height: 10%;
+  margin-left: 5%;
+  background-color: rgb(255, 255, 255)}
+          
+.DIV2{width:100%;
+  padding-top: 160px;
+  border:0px solid #000}
+
+.Clubs3{
+  width: 20%;
+  height: 10%;
+  margin-left: 50%;
+  background-color: rgb(255, 255, 255)}
+
+.IMAGES{
+  width:100%;
+  padding-top: 160px;
+  border:0px solid #000}
+
+#Test-Logo2{
+  position: relative;
+  height: 150px;
+  width: 200px;
+  left:10%
+
+
+}
+
+#Test-Logo4{
+  position: relative;
+  height: 150px;
+  width: 200px;
+  left:65%;
+
+}
+
+.IMAGES2{width:100%;
+  padding-top: 160px;
+  border:0px solid #000}
+
+  .match-overview {
+    margin-top: 20px;
+    
+    background: #385d94;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    
+    height: auto;
+    min-height: 387px;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,.6);
+    box-shadow: 0 0 30px rgba(0,0,0,.6);  
+    border: none;
+    }
+    
+    .match-overview .overview-top{
+      display: flex;
+      margin: 0 auto;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      padding-top: 30px;
+      border: none;
+    }
+    
+    
+    
+    .match-overview .next-match, .match-overview .last-match{
+      width: 100%;
+    padding-top: 56px;
+    text-transform: uppercase;
+    }
+    
+    .homepage-tab.active-tab {
+    display: block;
+    }
+    
+    .match-overview .next-match .next-match-game{
+    background: #010c3a;
+    border: 2px solid;
+    -o-border-image: linear-gradient(-145deg,#005fad 1%,transparent 50%,#ffbd11 100%);
+    border-image: linear-gradient(-145deg,#005fad 1%,transparent 50%,#ffbd11 100%);
+    border-image-slice: 1;
+    height: 75px;
+    margin: 0 4.55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 5px;
+    }
+    
+    .match-overview .next-match .next-match-game .home-team{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -20px;
+    width: 40%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    }
+    
+    .match-overview .next-match .next-match-game .home-team img, .match-overview .next-match .last-match-game .home-team img, .match-overview .last-match .next-match-game .home-team img, .match-overview .last-match .last-match-game .home-team img {
+    width: 129px;
+    height: 124px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    }
+    
+    .match-overview .next-match .next-match-game h2 {
+    font-family: 'Oswald',sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-align: center;
+    }
+    
+    ol, ul {
+    list-style: none;
+    }
+    
+    .match-overview .next-match .next-match-game .center-section{
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    }
+    
+    .match-overview .next-match .next-match-game .center-section h2, .match-overview .next-match .last-match-game .center-section h2, .match-overview .last-match .next-match-game .center-section h2, .match-overview .last-match .last-match-game .center-section h2 {
+    width: 100%;
+    line-height: 50px;
+    }
+    
+    .match-overview .next-match .next-match-game .away-team{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -20px;
+    width: 40%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    }
+    
+    .match-overview .next-match .next-match-lowercontent{
+    width: 100%;
+    padding-top: 20px;
+    }
+    
+    
+    #Right-Image{
+    
+    width:129px;
+    height:124px;
+    object-fit: contain;
+    
+    }
+    
+    .Title{
+      
+      font-family: "Times New Roman", Times, serif;
+      font-size: 40px;
+      padding-bottom: 50px;
+    
+    }
