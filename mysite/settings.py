@@ -116,7 +116,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fixture-scheduler',
         'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': 'ouOalbm98hOipdps',
         'HOST': 'localhost',
         'PORT': '5432'
     }

@@ -1,0 +1,1 @@
+..\cloud_sql_proxy_x64.exe -instances="fixture-dev:europe-west2:fixture-scheduler"=tcp:5432
