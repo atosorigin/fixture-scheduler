@@ -1,14 +1,29 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Tutorial
-from .models import Solution
+#from .models import Solution
 from django.views.generic import TemplateView
 from array import *
+from main.models import League, Run
 
 def homepage(request):
     return render(request = request,
                     template_name="main/home.html",
-                    context={"tutorials":Tutorial.objects.all})
+                    context={})
+
+def search(request, page=1, filter=0):
+    if page==2:
+        runs=Run.runs.filter(league=League.leagues.filter(id=filter)[0])
+        print(runs)
+        return render(request = request,
+                        template_name="main/search.html", context={'page':'2', 'runs':runs})
+    elif page==3:
+        leagues=League.leagues.all()
+        return render(request = request,
+                        template_name="main/search.html", context={"page":'3', 'run':leagues})
+    else:
+        leagues=League.leagues.all()
+        return render(request = request,
+                        template_name="main/search.html", context={'page':'1', 'leagues':leagues})
 
 
 
@@ -19,7 +34,7 @@ def fixtures(request):
 def view2(request):
     answer = "seriea 3023 "
     
-    all_solutions = Solution.objects.filter(solution__exact=answer)
+    all_solutions = ""# Solution.objects.filter(solution__exact=answer)
     #solutions_list = Solution.objects.all().distinct()
     teams = ["Juventus", "Inter Milan", "Lazio", "Cagliari", "Roma", "Atlanta", "Napoli", "Parma", "Verona", "Fiorentina", "Torino", "Milan", "Udinese", "Sassuolo", "Bologna", "Sampdoria", "Lecce", "Genoa", "SPAL", "Brescia"]
     logos = ['https://cdn.freebiesupply.com/images/large/2x/juventus-logo-png-transparent.png',

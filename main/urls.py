@@ -20,6 +20,7 @@ from django.conf.urls import url
 app_name = 'main'
 
 urlpatterns = [
+    path('search/<int:page>/<int:filter>', views.search),
     path('', views.homepage, name="homepage"),
     path('fixtures/',views.fixtures),
     path('view2/',views.view2),

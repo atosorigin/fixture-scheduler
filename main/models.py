@@ -2,62 +2,38 @@ from django.db import models
 from django.db.models import CharField
 from datetime import datetime
 
-class Tutorial(models.Model):
-    tutorial_title = models.CharField(max_length=200)
-    tutorial_content = models.TextField()
-    tutorial_published = models.DateTimeField("date published",default=datetime.now())
+class League(models.Model):
+    name = models.CharField(max_length=255)
+    sport = models.CharField(max_length=255)
+    leagues = models.Manager()
 
-    def __str__(self):
-        return self.tutorial_title
+class Team(models.Model):
+    league = models.ForeignKey(League, on_delete=models.CASCADE)
+    name = models.CharField(max_length=255)
+    teams = models.Manager()
 
+class Run(models.Model):
+    date = models.DateField()                               # When was the supercomputer run executed
+    name = models.CharField(max_length=255)                 # e.g. we ran with xyz rules switched off
+    notes = models.TextField()                              
+    league = models.ForeignKey(League, on_delete=models.CASCADE)
+    runs = models.Manager()
+    
+class Period(models.Model):
+    name = models.CharField(max_length=255)                 # This is a reference to the week, e.g. week01, week02
+    desc = models.TextField()                               # If the league period is not weekly, then this
+    periods = models.Manager()                              # period references for example the month, e.g. month01, etc
 
+class Schedule(models.Model): 
+    run = models.ForeignKey(Run, on_delete=models.CASCADE)  # reference to which supercomputer run produced this schedule
+    name = models.CharField(max_length=255)                 # e.g. PL12. In the past this was the solution hash key
+    desc = models.TextField()                               # e.g. Premier League 2020 final solution
+    schedules = models.Manager()
 
-class PremierTeams(models.Model):
-    tutorial_title = models.CharField(max_length=30)
-    tutorial_content = models.TextField()
-    tutorial_published = models.DateTimeField("date published",default=datetime.now())
+class Schedule_line_item(models.Model): 
+    period = models.ForeignKey(Period, on_delete=models.CASCADE)
+    home_team = models.ForeignKey(Team, related_name='home_team', on_delete=models.CASCADE)
+    away_team = models.ForeignKey(Team, related_name='away_team', on_delete=models.CASCADE)
+    schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE)
+    schedule_line_items = models.Manager()
 
-    def __str__(self):
-        return self.tutorial_title
-
-class Solution(models.Model):
-    solution = models.TextField()
-    team = models.IntegerField()
-    week01 = models.IntegerField()
-    week02 = models.IntegerField()
-    week03 = models.IntegerField()
-    week04 = models.IntegerField()
-    week05 = models.IntegerField()
-    week06 = models.IntegerField()
-    week07 = models.IntegerField()
-    week08 = models.IntegerField()
-    week09 = models.IntegerField()
-    week10 = models.IntegerField()
-    week11 = models.IntegerField()
-    week12 = models.IntegerField()
-    week13 = models.IntegerField()
-    week14 = models.IntegerField()
-    week15 = models.IntegerField()
-    week16 = models.IntegerField()
-    week17 = models.IntegerField()
-    week18 = models.IntegerField()
-    week19 = models.IntegerField()
-    week20 = models.IntegerField()
-    week21 = models.IntegerField()
-    week22 = models.IntegerField()
-    week23 = models.IntegerField()
-    week24 = models.IntegerField()
-    week25 = models.IntegerField()
-    week26 = models.IntegerField()
-    week27 = models.IntegerField()
-    week28 = models.IntegerField()
-    week29 = models.IntegerField()
-    week30 = models.IntegerField()
-    week31 = models.IntegerField()
-    week32 = models.IntegerField()
-    week33 = models.IntegerField()
-    week34 = models.IntegerField()
-    week35 = models.IntegerField()
-    week36 = models.IntegerField()
-    week37 = models.IntegerField()
-    week38 = models.IntegerField()

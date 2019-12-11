@@ -1,0 +1,50 @@
+{% extends "main/header.html" %}
+
+{% block content %}
+
+Hi please select the search criteria below 
+
+<br>
+
+{% ifequal page "1" %}
+<BR>
+Please select the league:
+<select id="league_selector" onchange="load_page2()">
+    <option value="0">---please select a league---</option>
+    {% for league in leagues %}
+    <option value="{{league.id}}">{{league.name}}</option>
+    {% endfor %}
+</select>
+
+<script type="text/javascript">
+    function load_page2() {
+        var e = document.getElementById("league_selector");
+        var str_league = e.options[e.selectedIndex].value;
+        window.open ('/search/2/'+str_league,'_self',false)
+    }
+</script>
+{% endifequal %}
+
+{% ifequal page "2" %}
+<BR>
+    Please select the run:
+    <select name="league_selector" onchange="load_page3()">
+        {% for run in runs %}
+        <option value="{{run.id}}">{{run.name}}</option>
+        {% endfor %}
+    </select>
+    
+    <script type="text/javascript">
+        function load_page3() {
+            window.open ('/search/3/','_self',false)
+        }
+    </script>
+{% endifequal %}
+
+{% ifequal page "3" %}
+page 3
+{% endifequal %}
+
+{% endblock %}
+
+
